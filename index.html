@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="./weatherApp.png" type="image/x-icon" />
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="title">
+        <h1>weather<span class="purple">App</span></h1>
+      </div>
+      <div id="searchBar" class="zoom">
+        <label for="city">
+          <input type="text" id="city" placeholder="City" />
+        </label>
+
+        <button id="checkWeather">Seach</button>
+      </div>
+
+      <div id="liveLocation">
+        <button id="yourLocationWeather" class="zoom">
+          <i class="fa fa-map-marker" id="locationIcon"></i>Your Location
+          Weather
+        </button>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="weather">
+        <div id="mainWeather" class="zoom">
+          <p id="showCity"></p>
+          <p id="temp"></p>
+          <p id="weatherType"></p>
+        </div>
+
+        <div id="detailWeather" class="zoom">
+          <div id="keys">
+            <p>Felt Temp.</p>
+            <p>Humidity</p>
+            <p>Wind</p>
+            <p>Visibility</p>
+            <p>Max Temp.</p>
+            <p>Min Temp.</p>
+          </div>
+          <div id="values">
+            <p id="feltTemp"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <p id="visibility"></p>
+            <p id="maxTemp"></p>
+            <p id="minTemp"></p>
+          </div>
+        </div>
+
+        <div class="mapouter zoom" id="map">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div id="forecast">
+        <!-- 7 divs for 7 days weather -->
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Made with 💜 by Priyanshu Amresh and Reeva </p>
+    </div>
+  </body>
+</html>
+
+<script src="main.js"></script>
