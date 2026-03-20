@@ -1,4 +1,4 @@
-//main.js
+// code for javascript
 // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 const api_key = `7e6067ea0aa872491fddff71912d1541`;
